@@ -1,0 +1,107 @@
+*{
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    /* border: 3px blueviolet solid; */
+    min-height: 50px;
+    margin: 0.7rem;
+    min-width: 400px;
+}
+
+body {
+    background-color: rgb(52, 172, 188);
+    font-family: "sans-serif", Arial, Helvetica, sans-serif;
+}
+
+main {
+    min-height: 200px;
+    overflow: auto;
+    background-color: #edf6f9;
+}
+
+header {
+    background-color: #83c5be;
+    box-shadow: 0 0 0.5rem rgb(16, 66, 64) ;
+}
+
+footer {
+    background-color: skyblue;
+}
+
+/* Contenido principal del sitio */
+main>div {
+    /* border: 2px orangered solid; */
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+}
+
+.secciones {
+    /* border: 2px rgb(23, 134, 129) solid; */
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article { 
+    /* border: 2px purple solid; */
+    margin: 0.5rem; 
+}
+
+/* logo y menu */
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;    
+}
+
+.header-menubar {
+    left:auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 750;
+    text-align: center;
+    padding: 0 0.9rem 0;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* cuando nos pocisionamos encima del link */
+.header-menubar a:hover {
+    color: #13c474;
+}
+
+/* galeria de imagenes */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 350px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
